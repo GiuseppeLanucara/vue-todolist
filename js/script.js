@@ -22,7 +22,7 @@ createApp ({
                   done: true,
                 },
                 {
-                  text: "Sistemare nuovao PC",
+                  text: "Sistemare nuovo PC",
                   done: false,
                 },
                 {

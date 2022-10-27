@@ -21,7 +21,7 @@
             <main>
                 <div class="input">
                     <label for="newToDo"></label>
-                    <input type="text" id="newToDo" v-model="newTodo" @keyup.enter="addTodo">
+                    <input type="text" id="newToDo" v-model="newTodo" @keyup.enter="addTodo"  v-model.trim="newTodo">
                     <button @click="addTodo">Aggiungi</button>
                 </div>
                 
