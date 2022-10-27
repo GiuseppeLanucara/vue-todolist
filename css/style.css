@@ -34,16 +34,15 @@ ul {
 li {
     margin-top: 15px;
     margin-bottom: 15px;
-    
     text-align: center;
-    position: relative;
+    
 }
 
 span {
     font-size: larger;
     font-weight: bolder;
     color: red;
-    position: absolute;
+    
     right: 10%;
 
 }
