@@ -30,7 +30,8 @@ createApp ({
                   done: true,
                 }
               ],
-
+              
+              newTodo: "",
 
         }
     },
