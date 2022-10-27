@@ -37,6 +37,10 @@ li {
     font-weight: bolder;
 }
 
+.todo-text {
+    text-decoration: line-through;
+}
+
 span {
     font-size: xx-large;
     font-weight: bolder;
