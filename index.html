@@ -21,12 +21,12 @@
             <main>
                 <div class="input">
                     <label for="newToDo"></label>
-                    <input type="text" id="newToDo">
-                    <button>Aggiungi</button>
+                    <input type="text" id="newToDo" v-model="newTodo">
+                    <button @click="addTodo">Aggiungi</button>
                 </div>
                 
                 <ul>
-                    <li v-for="(todo, index) in todos">{{todo.text}} <span>&cross;</span></li>
+                    <li v-if v-for="(todo, index) in todos">{{todo.text}} <span @click="removeTodo(index)">&cross;</span></li>
                     
                 </ul>
             </main>

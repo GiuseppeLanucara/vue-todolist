@@ -30,12 +30,25 @@ createApp ({
                   done: true,
                 }
               ],
-              
+
               newTodo: "",
 
         }
     },
     methods: {
-       
+        addTodo(){
+         if(this.newTodo.length > 1){
+         this.todos.push({
+         text: this.newTodo,
+         done: false
+        });
+
+        this.newTodo = "";
+      }
+    },
+        removeTodo(index){
+      if(confirm(`Sei sicuro di eliminare "${this.todos[index].text}"?`)){
+        this.todos.splice(index, 1);
+      }
     }
-}).mount("#app");
+}}).mount("#app");
