@@ -21,12 +21,11 @@
             <main>
                 <div class="input">
                     <label for="newToDo"></label>
-                    <input type="text" id="newToDo" v-model="newTodo" @keyup.enter="addTodo"  v-model.trim="newTodo">
+                    <input type="text" id="newToDo" v-model="newTodo" @keyup.enter="addTodo" v-model.trim="newTodo">
                     <button @click="addTodo">Aggiungi</button>
                 </div>
-                
                 <ul>
-                    <li v-for="(todo, index) in todos">{{todo.text}} <span @click="removeTodo(index)">&cross;</span></li> 
+                    <li v-for="(todo, index) in todos" :class="{'text': todo.done}">{{todo.text}}<span @click="removeTodo(index)">&cross;</span></li> 
                 </ul>
             </main>
         </div>
